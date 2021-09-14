@@ -9,7 +9,7 @@ class Inventory:
     @staticmethod
     def arquivo_xml(file):
         root = ET.parse(file).getroot()
-         """ Identifica as chaves arquivo do XML."""
+        """ Identifica as chaves arquivo do XML. """
         todos_registros = root.findall("record")
         inventory = []
         for records in todos_registros:
