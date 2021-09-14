@@ -15,4 +15,4 @@ class CsvImporter(Importer):
                 inventory = [row for row in csv_file]
             return inventory
         else:
-            raise ValueError("Arquivo inválido.")
+            raise ValueError("Arquivo inválido")

@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 class XmlImporter(Importer):
     def __init__(self):
-        print("Xml Importer.")
+        print("Xml Importer")
 
     def import_data(file):
         isTrue = file.endswith(".xml")
@@ -20,4 +20,4 @@ class XmlImporter(Importer):
                     inventory.append(file_dict)
                 return inventory
         else:
-            raise ValueError("Arquivo inválido.")
+            raise ValueError("Arquivo inválido")

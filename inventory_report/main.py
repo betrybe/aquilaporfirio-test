@@ -17,4 +17,4 @@ def main():
         return print(f"{report}", end="")
 
     except AssertionError:
-        print("Verificar os argumentos.", file=sys.stderr)
+        print("Verificar os argumentos", file=sys.stderr)

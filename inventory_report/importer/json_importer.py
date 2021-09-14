@@ -4,7 +4,7 @@ import json
 
 class JsonImporter(Importer):
     def __init__(self):
-        print("Json Importer.")
+        print("Json Importer")
 
     @staticmethod
     def import_data(file):
@@ -14,4 +14,4 @@ class JsonImporter(Importer):
                 json_file = json.load(file)
             return list(json_file)
         else:
-            raise ValueError("Arquivo inválido.")
+            raise ValueError("Arquivo inválido")

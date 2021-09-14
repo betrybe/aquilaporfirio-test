@@ -5,7 +5,7 @@ from collections import Counter
 
 class SimpleReport:
     def __init__(self):
-        print("Criação do Simple Report.")
+        print("Criação do Simple Report")
 
     @staticmethod
     def retorna_produto_mais_antigo(list):
@@ -19,7 +19,7 @@ class SimpleReport:
             min(
                 datetime.strptime(item["data_de_validade"], data_formatada)
                 for item in list
-                if datetime.strptime(item["data_de_validade"], data_formatada) 
+                if datetime.strptime(item["data_de_validade"], data_formatada)
                 > datetime.today()
             ).date()
         )

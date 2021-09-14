@@ -14,7 +14,7 @@ class CompleteReport(SimpleReport):
 
             empresas_comuns = Counter(todas_empresas)
 
-            estoque_por_empresa = "\nProdutos estocados por empresa:\n"
+            estoque_por_empresa = "\nProdutos estocados por empresa: \n"
 
         for nome_empresa, quantidade in empresas_comuns.items():
             estoque_por_empresa += f"- {nome_empresa}: {quantidade}\n"
