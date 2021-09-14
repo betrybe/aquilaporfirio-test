@@ -21,4 +21,3 @@ class XmlImporter(Importer):
                 return inventory
         else:
             raise ValueError("Arquivo inválido.")
-            

@@ -14,10 +14,10 @@ class CompleteReport(SimpleReport):
 
             empresas_comuns = Counter(todas_empresas)
 
-            estoque_por_empresa = "\nProdutos estocados por empresa: \n"
+            estoque_por_empresa = "\nProdutos estocados por empresa:\n"
 
         for nome_empresa, quantidade in empresas_comuns.items():
-            estoque_por_empresa += f"- {nome_empresa}: {quantidade} \n"
+            estoque_por_empresa += f"- {nome_empresa}: {quantidade}\n"
         return estoque_por_empresa
 
     @classmethod
@@ -25,4 +25,3 @@ class CompleteReport(SimpleReport):
         simple_report = super().generate(list)
         complete_report = cls.produtos_estocados_por_empresa(list)
         return simple_report + complete_report
-        

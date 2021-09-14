@@ -40,9 +40,9 @@ class SimpleReport:
         empresa_com_maior_estoque = cls.quantidade_de_produto_estocado(list)
 
         simple_report = (
-            f"Data de fabricação mais antiga: {produto_antigo} \n"
-            f"Data de validade mais próxima: {validade_mais_proxima} \n"
+            f"Data de fabricação mais antiga: {produto_antigo}\n"
+            f"Data de validade mais próxima: {validade_mais_proxima}\n"
             "Empresa com maior quantidade de produtos "
-            f"estocados: {empresa_com_maior_estoque} \n"
+            f"estocados: {empresa_com_maior_estoque}\n"
         )
         return simple_report

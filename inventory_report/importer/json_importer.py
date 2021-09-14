@@ -15,4 +15,3 @@ class JsonImporter(Importer):
             return list(json_file)
         else:
             raise ValueError("Arquivo inválido.")
-            

@@ -16,4 +16,3 @@ class CsvImporter(Importer):
             return inventory
         else:
             raise ValueError("Arquivo inválido.")
-            
