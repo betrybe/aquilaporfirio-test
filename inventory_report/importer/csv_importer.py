@@ -1,6 +1,7 @@
 from inventory_report.importer.importer import Importer
 import csv
 
+
 class CsvImporter(Importer):
     def __init__(self):
         print("Csv Importer")
@@ -15,3 +16,4 @@ class CsvImporter(Importer):
             return inventory
         else:
             raise ValueError("Arquivo inválido.")
+            

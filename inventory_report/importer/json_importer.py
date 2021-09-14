@@ -1,6 +1,7 @@
 from inventory_report.importer.importer import Importer
 import json
 
+
 class JsonImporter(Importer):
     def __init__(self):
         print("Json Importer.")
@@ -14,3 +15,4 @@ class JsonImporter(Importer):
             return list(json_file)
         else:
             raise ValueError("Arquivo inválido.")
+            

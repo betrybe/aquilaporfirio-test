@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import csv
 import json
 
+
 class Inventory:
 
     @staticmethod
@@ -50,3 +51,4 @@ class Inventory:
 
         if type == "completo":
             return CompleteReport.generate(inventory)
+            

@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Importer(ABC):
     def __init__(self):
         print("Importer.")
@@ -7,3 +8,4 @@ class Importer(ABC):
     @abstractmethod
     def import_data(self):
         raise NotImplementedError
+        

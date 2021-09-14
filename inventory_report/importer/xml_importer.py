@@ -1,6 +1,7 @@
 from inventory_report.importer.importer import Importer
 import xml.etree.ElementTree as ET
 
+
 class XmlImporter(Importer):
     def __init__(self):
         print("Xml Importer.")
@@ -20,3 +21,4 @@ class XmlImporter(Importer):
                 return inventory
         else:
             raise ValueError("Arquivo inválido.")
+            

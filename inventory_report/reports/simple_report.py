@@ -2,6 +2,7 @@ from operator import itemgetter
 from datetime import datetime
 from collections import Counter
 
+
 class SimpleReport:
     def __init__(self):
         print("Criação do Simple Report.")
@@ -13,12 +14,13 @@ class SimpleReport:
 
     @staticmethod
     def retorna_validade_mais_proxima(list):
-        data_formatada = "%Y-%m-%d" #YYYY-MM-DD
+        data_formatada = "%Y-%m-%d"
         return str(
             min(
                 datetime.strptime(item["data_de_validade"], data_formatada)
                 for item in list
-                if datetime.strptime(item["data_de_validade"], data_formatada) > datetime.today()
+                if datetime.strptime(item["data_de_validade"], data_formatada) 
+                > datetime.today()
             ).date()
         )
 
@@ -40,6 +42,7 @@ class SimpleReport:
         simple_report = (
             f"Data de fabricação mais antiga: {produto_antigo} \n"
             f"Data de validade mais próxima: {validade_mais_proxima} \n"
-            "Empresa com maior quantidade de produtos estocados: {empresa_com_maior_estoque} \n"
+            "Empresa com maior quantidade de produtos "
+            f"estocados: {empresa_com_maior_estoque} \n"
         )
         return simple_report
